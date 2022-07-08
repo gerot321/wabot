@@ -1,0 +1,9 @@
+[submodule "app/common"]
+	path = app/common
+	url = https://bitbucket.org/waveconsulting/vocerpulsa-common-be.git
+[submodule "wavecore-nodejs"]
+	path = wavecore-nodejs
+	url = https://bitbucket.org/waveconsulting/wavecore-nodejs.git
+[submodule "app/core"]
+	path = app/core
+url=https://bitbucket.org/ravencodeid/nodejs-back-end.git

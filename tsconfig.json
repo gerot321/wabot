@@ -1,0 +1,28 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"strict": false,
+		"importHelpers": true,
+        "inlineSources": true,
+        "sourceMap": true,
+        "declaration": false,
+        "module": "commonjs",
+        "moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"target": "es6",
+		"typeRoots": ["node_modules/@types"],
+		"lib": ["es2017", "es2015.reflect", "dom"],
+		"baseUrl": ".",
+		"allowSyntheticDefaultImports": true,
+		"paths": {
+			"@ngrx-demo/*": ["libs/*"]
+		},
+		"resolveJsonModule": true,
+        "outDir": "./dist",
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules", "tmp"],
+	"include": ["app/**/*.ts"],
+}

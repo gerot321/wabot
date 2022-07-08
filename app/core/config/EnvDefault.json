@@ -1,0 +1,74 @@
+{
+    "databaseClient": "mysql2",
+    "maxMailSendAttempt": 3,
+    "environment": "staging",
+    "jwtSecret": "J3d3akUTp9cEaH9PaRXT",
+    "timezone": "Asia/Jakarta",
+    "emailDomainOverride": null,
+    "directorySettings": {
+        "frontendDirectory": "C:/Users/asus/Documents/wavecore-nodejs/rawdata",
+        "pugPDF": "./app/rawdata/attachments",
+        "sheetService": "app/rawdata/worksheet",
+        "jarvisTemplate": "./app/template/csv",
+        "storageFolderName": "raw-data",
+        "basePath": "C:/Users/asus/Documents/jarvis-service"
+    },
+    "rabbitMQUrl": "amqp://localhost",
+    "aclExcludedUrl": [
+        "/auth"
+    ],
+    "jwtExcludedUrl": [
+        "/auth"
+    ],
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "root",
+        "database": "core"
+    },
+    "mongodb": {
+        "host": "stagingdevbox.com",
+        "port": "27017",
+        "user": null,
+        "password": null,
+        "database": "core",
+        "options": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    },
+    "redis": {
+        "host": "stagingdevbox.com",
+        "port": "6379",
+        "key": "WAVECORE_NODEJS",
+        "ttl": 100
+    },
+    "sequelize": {
+        "models": [
+            "model/mysql/email"
+        ]
+    },
+    "fromEmailAddress": "info@wavecore.id",
+    "mail": {
+        "host": "smtp.ethereal.email",
+        "port": 587,
+        "secure": false,
+        "auth": {
+            "user": "jacklyn29@ethereal.email",
+            "pass": "P2XuGa3Zcsh22v4UVz"
+        }
+    },
+    "docs": {
+        "serveSwagger": false,
+        "generateSwaggerConfig": false
+    },
+    "express": {
+        "port": 3000
+    },
+    "authorization": {
+        "redirectUrlIfUnauthorized": "/auth/login"
+    },
+    "acl": {
+        "database": "memory"
+    }
+}
